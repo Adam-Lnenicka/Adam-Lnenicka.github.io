@@ -1,0 +1,285 @@
+$hilightColor:#66fcf1;
+$darkColor: #1f2833;
+$lightColor: #ebebeb;
+
+
+head{
+    margin: 0;
+}
+
+h1{
+    color: $hilightColor;
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center
+
+}
+
+h2{
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+    color: $darkColor;
+}
+
+h3{
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+h4{
+    font-size: 1rem;
+    margin: 0.5em 0;
+}
+
+
+body{
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+}
+
+.banner{
+    background-image: url(background-img.jpg);
+    background-size: cover;
+    background-color: $darkColor;
+    background-blend-mode: overlay;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1{
+        margin: 0;
+    }
+    h2{
+        color: white;
+        font-size: 1.8rem;
+        text-transform: none;
+        margin-top: 0.7em;
+        margin-bottom: 2.5em;
+    }    
+    .btn:hover{
+        border: solid 2px white;
+    }
+}
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.btn
+{
+    background-color: $hilightColor;
+    margin: 0.2em;
+    padding: 0.5em 2em;
+    border-radius: 0.3em;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: black;
+    display: inline-block;
+
+
+}
+
+.btn2{
+    color:  rgba(255, 255, 255, 0.8);
+    background-color:  black;
+    margin: 0.2em;
+    padding: 0.5em 2em;
+    border-radius: 0.3em;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: solid 1px $hilightColor;
+    font-weight: 900;
+    display: inline-block;
+    &:hover{
+        background-color: $hilightColor;
+        color: $darkColor;
+    }
+}
+
+
+
+//cards
+
+.cards{
+    padding: 1em;
+}
+
+.card {
+    width: 90%;
+    margin: 1em auto;
+    display: flex;
+    flex-direction: column;
+    background-color: $lightColor;
+    max-width: 300px;
+    ul{
+       
+        padding: 0em 1.1em;
+        margin-top: 0;
+    }
+    .btn{
+        color: white;
+        background-color: $darkColor;
+        font-size: 0.8rem;
+        &:hover{
+            color: $hilightColor;
+        }
+    }
+
+}
+
+.card-img {
+    object-fit: cover;
+    width: 100%;
+    min-width: 0;
+    min-height: 0;
+    
+    background: black;
+}
+
+.card-content {
+    padding: 1em;
+}
+
+
+
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 3em;
+    flex-wrap: wrap;
+    
+}
+
+
+
+
+
+
+@media (min-width: 700px) {
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        flex-direction: row;
+        max-width: 600px;
+    }
+    
+    .card-img {
+        width: 100%;
+    }
+    
+    .card-content {
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+
+    .card-body {
+        font-size: 1.125rem;
+        max-width: 600px;
+    }
+    
+    .card-footer {
+        margin-top: auto;
+        flex-wrap: nowrap;
+        
+        
+    }
+}
+
+//technology cards
+
+.technology-section{
+    max-width:1500px;
+    margin: 0 auto;
+}
+.technology-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+    
+    
+}
+
+.technology-card{
+    background-color: $lightColor;
+    text-align: center;
+    margin: 0.3em;
+    height: 14em;
+    width: 90%;
+    padding: 2em;
+    img{
+        width:100px;
+        margin: 0;
+        padding: 0;
+    }
+  
+    
+    
+    
+}
+
+.about-me-section{
+    text-align: center;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 800px;
+    .btn{
+        margin: 2em;
+    }
+
+
+}
+
+footer{
+    background-color: #1f2833;
+    height: 10vh;
+}
+
+@media (min-width: 500px){
+    .technology-cards{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .technology-card{
+        width: 15em
+    }
+
+    .projects{
+        
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .project{
+        width: 30em;
+        flex-direction: row;
+        max-width: 2000px;
+        flex-wrap: wrap;
+
+    }
+    .about-me-section .btn:hover{
+        border: solid 2px $darkColor;
+
+    }
+
+}

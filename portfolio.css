@@ -1,0 +1,317 @@
+head {
+  margin: 0;
+}
+
+h1 {
+  color: #66fcf1;
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-align: center;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center;
+  color: #1f2833;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+h4 {
+  font-size: 1rem;
+  margin: 0.5em 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.banner {
+  background-image: url(background-img.jpg);
+  background-size: cover;
+  background-color: #1f2833;
+  background-blend-mode: overlay;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.banner h1 {
+  margin: 0;
+}
+
+.banner h2 {
+  color: white;
+  font-size: 1.8rem;
+  text-transform: none;
+  margin-top: 0.7em;
+  margin-bottom: 2.5em;
+}
+
+.banner .btn:hover {
+  border: solid 2px white;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn {
+  background-color: #66fcf1;
+  margin: 0.2em;
+  padding: 0.5em 2em;
+  border-radius: 0.3em;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: black;
+  display: inline-block;
+}
+
+.btn2 {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: black;
+  margin: 0.2em;
+  padding: 0.5em 2em;
+  border-radius: 0.3em;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: solid 1px #66fcf1;
+  font-weight: 900;
+  display: inline-block;
+}
+
+.btn2:hover {
+  background-color: #66fcf1;
+  color: #1f2833;
+}
+
+.cards {
+  padding: 1em;
+}
+
+.card {
+  width: 90%;
+  margin: 1em auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ebebeb;
+  max-width: 300px;
+}
+
+.card ul {
+  padding: 0em 1.1em;
+  margin-top: 0;
+}
+
+.card .btn {
+  color: white;
+  background-color: #1f2833;
+  font-size: 0.8rem;
+}
+
+.card .btn:hover {
+  color: #66fcf1;
+}
+
+.card-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+  background: black;
+}
+
+.card-content {
+  padding: 1em;
+}
+
+.card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: 3em;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (min-width: 700px) {
+  .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 600px;
+  }
+  .card-img {
+    width: 100%;
+  }
+  .card-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card-body {
+    font-size: 1.125rem;
+    max-width: 600px;
+  }
+  .card-footer {
+    margin-top: auto;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+.technology-section {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.technology-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.technology-card {
+  background-color: #ebebeb;
+  text-align: center;
+  margin: 0.3em;
+  height: 14em;
+  width: 90%;
+  padding: 2em;
+}
+
+.technology-card img {
+  width: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+.about-me-section {
+  text-align: center;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.about-me-section .btn {
+  margin: 2em;
+}
+
+footer {
+  background-color: #1f2833;
+  height: 10vh;
+}
+
+@media (min-width: 500px) {
+  .technology-cards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .technology-card {
+    width: 15em;
+  }
+  .projects {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .project {
+    width: 30em;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 2000px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .about-me-section .btn:hover {
+    border: solid 2px #1f2833;
+  }
+}
+/*# sourceMappingURL=portfolio.css.map */
