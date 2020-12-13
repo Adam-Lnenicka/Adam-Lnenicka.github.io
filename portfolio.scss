@@ -25,10 +25,14 @@ h2{
 h3{
     text-transform: uppercase;
     font-size: 1rem;
+    padding:0;
+    margin:0.2em;
 }
 h4{
     font-size: 1rem;
-    margin: 0.5em 0;
+    margin:0.6em 0;
+
+    
 }
 
 
@@ -59,7 +63,7 @@ body{
         margin-bottom: 2.5em;
     }    
     .btn:hover{
-        border: solid 2px white;
+        background-color: #53b2c7;;
     }
 }
 
@@ -109,7 +113,8 @@ body{
 //cards
 
 .cards{
-    padding: 1em;
+    padding: 0.1em;
+
 }
 
 .card {
@@ -118,7 +123,6 @@ body{
     display: flex;
     flex-direction: column;
     background-color: $lightColor;
-    max-width: 300px;
     ul{
        
         padding: 0em 1.1em;
@@ -146,9 +150,11 @@ body{
 
 .card-content {
     padding: 1em;
+    padding-right: 0em;
+    li{
+        margin: 0.2em 0; 
+    }
 }
-
-
 
 
 .card-footer {
@@ -157,13 +163,7 @@ body{
     align-items: flex-end;
     margin-top: 3em;
     flex-wrap: wrap;
-    
 }
-
-
-
-
-
 
 @media (min-width: 700px) {
     .cards{
@@ -174,16 +174,17 @@ body{
 
     .card {
         flex-direction: row;
-        max-width: 600px;
+        width: 650px;
     }
     
     .card-img {
-        width: 100%;
+        width: 60%;
     }
     
     .card-content {
         display: flex;
         flex-direction: column;
+        width: 40%;
 
     }
     

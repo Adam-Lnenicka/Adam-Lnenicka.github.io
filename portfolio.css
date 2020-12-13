@@ -19,11 +19,13 @@ h2 {
 h3 {
   text-transform: uppercase;
   font-size: 1rem;
+  padding: 0;
+  margin: 0.2em;
 }
 
 h4 {
   font-size: 1rem;
-  margin: 0.5em 0;
+  margin: 0.6em 0;
 }
 
 body {
@@ -67,7 +69,7 @@ body {
 }
 
 .banner .btn:hover {
-  border: solid 2px white;
+  background-color: #53b2c7;
 }
 
 .buttons {
@@ -114,7 +116,7 @@ body {
 }
 
 .cards {
-  padding: 1em;
+  padding: 0.1em;
 }
 
 .card {
@@ -128,7 +130,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #ebebeb;
-  max-width: 300px;
 }
 
 .card ul {
@@ -157,6 +158,11 @@ body {
 
 .card-content {
   padding: 1em;
+  padding-right: 0em;
+}
+
+.card-content li {
+  margin: 0.2em 0;
 }
 
 .card-footer {
@@ -190,10 +196,10 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    max-width: 600px;
+    width: 650px;
   }
   .card-img {
-    width: 100%;
+    width: 60%;
   }
   .card-content {
     display: -webkit-box;
@@ -203,6 +209,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 40%;
   }
   .card-body {
     font-size: 1.125rem;
