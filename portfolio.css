@@ -130,6 +130,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #ebebeb;
+  border-radius: 0.5em;
 }
 
 .card ul {
@@ -154,11 +155,11 @@ body {
   min-width: 0;
   min-height: 0;
   background: black;
+  overflow: none;
 }
 
 .card-content {
   padding: 1em;
-  padding-right: 0em;
 }
 
 .card-content li {
@@ -169,12 +170,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
   margin-top: 3em;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;

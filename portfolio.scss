@@ -123,6 +123,7 @@ body{
     display: flex;
     flex-direction: column;
     background-color: $lightColor;
+    border-radius: 0.5em;
     ul{
        
         padding: 0em 1.1em;
@@ -146,11 +147,12 @@ body{
     min-height: 0;
     
     background: black;
+    overflow: none;
 }
 
 .card-content {
     padding: 1em;
-    padding-right: 0.5em;
+
     li{
         margin: 0.2em 0; 
     }
@@ -159,8 +161,8 @@ body{
 
 .card-footer {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+
+
     margin-top: 3em;
     flex-wrap: wrap;
 }
