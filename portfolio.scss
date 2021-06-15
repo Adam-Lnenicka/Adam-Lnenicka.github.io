@@ -61,6 +61,7 @@ body{
         text-transform: none;
         margin-top: 0.7em;
         margin-bottom: 2.5em;
+        font-weight: 500;
     }    
     .btn:hover{
         background-color: #53b2c7;;
@@ -122,8 +123,7 @@ body{
     margin: 1em auto;
     display: flex;
     flex-direction: column;
-    background-color: $lightColor;
-    border-radius: 0.5em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    border-radius: 0.5em;
     ul{
        
         padding: 0em 1.1em;
@@ -153,6 +153,21 @@ body{
 .card-content {
     padding: 1em;
 
+    h3{
+        text-align: center;
+        font-weight: 800;
+        color: rgb(46, 45, 45);
+    }
+
+    h4{
+        color: rgb(66, 66, 66);
+    }
+
+    ul{
+        color: rgb(90, 90, 90);
+        font-weight:400;
+    }
+
     li{
         margin: 0.2em 0; 
     }
@@ -167,16 +182,24 @@ body{
     flex-wrap: wrap;
 }
 
+// .inner-card{
+//     display:flex;
+//     justify-content: center;
+//     color:honeydew;
+// }
+
 @media (min-width: 700px) {
     .cards{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
     }
 
     .card {
         flex-direction: row;
-        width: 650px;
+        width: 600px;
+        min-height: 300px;
     }
     
     .card-img {
@@ -233,8 +256,10 @@ body{
 
     img{
         width:100px;
+        object-fit: cover;
         margin: 0;
         padding: 0;
+        border-radius: 30px;
     }
   
     
